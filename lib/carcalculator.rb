@@ -1,16 +1,19 @@
 # hello
 require 'carcalculator/version'
 # hello
-# module Carcalculator
+# Carprice.greet(7+3)
 class Carprice
+  def self.cal(input)
+    # puts "Hello, #{name}! I'm Ruby!"
 
   taxrate = 0.13
 
-  print 'Enter car amount:'
+  # print"Enter car amount:#{name}"
 
-  price = gets.chomp.to_i
+  price = input
 
   tax = price * taxrate
 
   puts "Tax on $#{price} is $#{tax}, so your total is $#{price + tax}"
+  end
 end
